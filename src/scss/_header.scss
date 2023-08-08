@@ -1,0 +1,49 @@
+@import 'resets';
+
+.header {
+	height: 15vh;
+	display: flex;
+	align-items: center;
+
+	.container {
+		@include container();
+		display: flex;
+		position: relative;
+
+		.brand-wrap {
+			.img {
+				width: 70px;
+			}
+		}
+
+		.navigation {
+			display: none;
+			.nav-links {
+				.link {
+					a {
+						color: $color-light;
+					}
+				}
+			}
+		}
+
+		.hamburger,
+		.hamburger-close {
+			position: absolute;
+			right: 0;
+			height: 100%;
+			display: flex;
+			align-items: center;
+
+			i {
+				font-size: 2rem;
+				color: $color-light;
+				cursor: pointer;
+			}
+		}
+
+		.hamburger-close {
+			display: none;
+		}
+	}
+}

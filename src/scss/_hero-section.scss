@@ -1,0 +1,76 @@
+@import 'resets';
+
+.hero-section {
+	.container {
+		@include container();
+		padding: 4em 0 3em 0;
+		display: grid;
+		gap: 3em;
+
+		.text-wrap {
+			.masthead {
+				@include hero-font();
+				margin-bottom: 0.6em;
+				text-transform: capitalize;
+			}
+
+			.text {
+				@include body-text();
+				margin-bottom: 2em;
+			}
+
+			.btn {
+				background: $accent-color;
+				padding: 1.1em 3em;
+				border: none;
+				font-size: 1rem;
+				text-transform: capitalize;
+				border-radius: 40px;
+
+				.text {
+					margin-right: 0.3em;
+					color: $color-light;
+				}
+
+				.arrow {
+					background: $color-light;
+					padding: 0.5em 0.65em;
+					border-radius: 100%;
+				}
+			}
+
+			.learn-more-btn,
+			.btn {
+				display: inline-block;
+				cursor: pointer;
+			}
+		}
+
+		.img-wrap {
+			background: url('/assets/hero-img.png') center/cover, no-repeat;
+			height: 400px;
+			width: 100%;
+			border-radius: 100%;
+		}
+	}
+
+	@media screen and (min-width: 62em) {
+		height: 100vh;
+
+		.container {
+			display: flex;
+			padding-bottom: 10em;
+			justify-content: space-around;
+
+			.text-wrap {
+				max-width: 500px;
+			}
+
+			.img-wrap {
+				background: url('/assets/hero-img.png') center/cover, no-repeat;
+				width: 500px;
+				height: 500px;
+			}
+		}
+	}
+}

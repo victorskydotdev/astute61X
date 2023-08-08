@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- stylesheet -->
+		<link rel="stylesheet" href="/css/main.css" />
+
+		<link rel="icon" type="image/x-icon" href="/assets/brand-logo.png" />
+
+		<!-- fontawesome script -->
+		<script
+			src="https://kit.fontawesome.com/8464da9b67.js"
+			crossorigin="anonymous"></script>
+
+		<!-- site title -->
+		<title>{{ title }}</title>
+	</head>
+	<body>
+		{% include "header.njk" %}
+		{{ content | safe }}
+		{% include "footer.njk" %}
+
+		<script src="/js/app.js"></script>
+	</body>
+</html>

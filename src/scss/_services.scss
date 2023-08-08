@@ -1,0 +1,102 @@
+@import 'resets';
+
+.services-section {
+	background: #000;
+	padding: 6em 0 4em 0;
+	.container {
+		.wrap {
+			@include container();
+			margin-bottom: 3em;
+			.heading {
+				color: $color-light;
+				font-size: clamp(25px, 7vw, 45px);
+				margin-bottom: 0.7em;
+			}
+
+			.sub-text {
+				@include body-text();
+				color: $color-light;
+				margin-bottom: 3em;
+				max-width: 400px;
+			}
+
+			.nav-arrow-wrap {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+
+				.buttons {
+					display: flex;
+					gap: 1em;
+
+					button {
+						background: $primary-color;
+						border: none;
+						height: 40px;
+						width: 40px;
+						border-radius: 100%;
+						cursor: pointer;
+
+						i {
+							font-size: 1rem;
+						}
+					}
+				}
+			}
+		}
+
+		.services-wrap {
+			display: grid;
+			grid-auto-flow: column;
+			grid-auto-columns: 92%;
+			gap: 1em;
+			overflow-x: auto;
+			padding-bottom: 2em;
+			padding-left: 1.5em;
+			scroll-snap-type: inline mandatory;
+
+			.card {
+				border-radius: 1.25rem;
+				border: 2px solid #7c7c7c;
+				width: 100%;
+				transition: all 200ms ease-in;
+				scroll-snap-align: center;
+				height: fit-content;
+
+				.wrap {
+					@include container();
+					width: 80%;
+					padding: 2em 0;
+
+					.heading {
+						font-size: 1.2rem;
+						color: $body-text-color;
+					}
+
+					.info {
+						color: $body-text-color;
+					}
+				}
+
+				&:hover {
+					@include card();
+
+					.wrap {
+						.heading {
+							color: $color-light;
+						}
+
+						.info {
+							color: $color-light;
+						}
+					}
+				}
+			}
+
+			// media query for card services width
+			@media screen and (min-width: 43em) {
+				grid-auto-columns: 450px;
+			}
+		}
+	}
+}

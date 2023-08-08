@@ -1,0 +1,25 @@
+{
+	"name": "astute",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "eleventy --serve",
+		"build": "eleventy",
+		"build:sass": "sass --watch src/scss/main.scss src/css/main.css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/victorskydotdev/astute61X.git"
+	},
+	"author": "Victor Sky Emejor",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/victorskydotdev/astute61X/issues"
+	},
+	"homepage": "https://github.com/victorskydotdev/astute61X#readme",
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"sass": "^1.64.2"
+	}
+}
