@@ -40,16 +40,15 @@
 				font-family: 'Poppins', sans-serif;
 				display: flex;
 				align-items: center;
-				// justify-content: center;
 
 				span {
-					color: #000;
+					color: $accent-color;
 					height: 40px;
 					width: 40px;
 					border-radius: 100%;
 					font-size: 1.2rem;
 					margin-right: 1em;
-					background: $primary-color;
+					background: $color-light;
 					display: flex;
 					align-items: center;
 					justify-content: center;

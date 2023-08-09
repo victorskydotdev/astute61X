@@ -2,5 +2,123 @@
 
 .why-section {
 	margin-bottom: 6em;
-	height: 70vh;
+	padding: 6em 0;
+
+	.container {
+		@include container();
+		display: grid;
+		gap: 40px;
+
+		.content-wrap {
+			display: grid;
+			gap: 15px;
+
+			.wrap {
+				.heading {
+					font-size: clamp(25px, 7vw, 45px);
+					text-align: center;
+					border: $body-heading-color 2px solid;
+					padding: 1em;
+					color: $body-heading-color;
+					text-transform: capitalize;
+					border-radius: 20px;
+				}
+
+				.text {
+					display: flex;
+					align-items: center;
+					background: #005277;
+					padding: 2em 2em;
+					color: $color-light;
+					text-transform: capitalize;
+					border-radius: 20px;
+
+					span {
+						color: $color-light;
+						min-height: 40px;
+						min-width: 40px;
+						border-radius: 100%;
+						font-size: 1.2rem;
+						margin-right: 1em;
+						background: $accent-color;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+				}
+			}
+		}
+
+		.image-container {
+			background: url('/assets/wcu-img.png') center/cover, no-repeat;
+			height: 400px;
+			width: 100%;
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				background: rgba(0, 0, 0, 0.37);
+				inset: 0;
+				border-radius: 20px;
+			}
+
+			.btn {
+				background: $accent-color;
+				padding: 1.1em 3em;
+				border: none;
+				font-size: 1rem;
+				text-transform: capitalize;
+				border-radius: 40px;
+				color: $color-light;
+				position: absolute;
+				top: 80%;
+				z-index: 2;
+
+				.text {
+					margin-right: 0.3em;
+				}
+
+				.arrow {
+					background: $color-light;
+					color: $accent-color;
+					padding: 0.5em 0.8em;
+					border-radius: 100%;
+				}
+			}
+		}
+
+		@media screen and (min-width: 62em) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+
+			.content-wrap {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-areas: 'heading-wrap heading-wrap';
+
+				.heading-wrap {
+					grid-area: heading-wrap;
+				}
+
+				.results-wrap {
+					// margin-right: -2em;
+				}
+
+				.solutions-wrap {
+					// margin-right: -100px;
+					position: relative;
+					z-index: 2;
+				}
+			}
+
+			.image-container {
+				position: relative;
+			}
+		}
+	}
 }

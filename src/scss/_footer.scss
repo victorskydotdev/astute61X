@@ -11,6 +11,14 @@
 		display: grid;
 		gap: 50px;
 		position: relative;
+		overflow: hidden;
+
+		.positioned-img {
+			position: absolute;
+
+			right: -300px;
+			bottom: 0;
+		}
 
 		.footer-brand-wrap {
 			width: 90%;
