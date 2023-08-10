@@ -1,0 +1,65 @@
+@import 'resets';
+
+.vision-section {
+	padding: 8em 0;
+
+	.container {
+		@include container();
+		display: grid;
+		gap: 30px;
+		position: relative;
+
+		.text-area {
+			.heading {
+				font-size: $body-font-size;
+				margin-bottom: 0.8em;
+				font-family: $heading-font;
+			}
+
+			.text {
+				max-width: 500px;
+				line-height: $line-heaight;
+				color: $body-text-color;
+			}
+		}
+
+		.img-container {
+			background: url('/assets/about-vision-img.png') center/cover, no-repeat;
+			height: 400px;
+			width: 100%;
+			border-radius: 20px;
+			position: relative;
+
+			.positioned-img {
+				position: absolute;
+				top: 0;
+				width: 100px;
+			}
+		}
+
+		@media screen and (min-width: 43em) {
+			.img-container {
+				width: 400px;
+				display: flex;
+				justify-self: right;
+
+				.positioned-img {
+					left: -12%;
+				}
+			}
+		}
+
+		@media screen and (min-width: 62em) {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 8em;
+			width: 80%;
+			align-items: center;
+
+			.img-container {
+				width: 500px;
+				height: 450px;
+			}
+		}
+	}
+}

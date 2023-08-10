@@ -4,3 +4,10 @@
 @use 'why-section';
 @use 'unlock-section';
 @use 'footer';
+
+// about page styles
+@use 'about-hero';
+@use 'about-introtext-section';
+@use 'about-vision-section';
+@use 'about-mission-section';
+@use 'about-team-section';

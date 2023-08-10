@@ -9,7 +9,7 @@
 			margin-bottom: 3em;
 			.heading {
 				color: $color-light;
-				font-size: clamp(25px, 7vw, 45px);
+				font-size: $body-font-size;
 				margin-bottom: 0.7em;
 				font-family: $heading-font;
 			}

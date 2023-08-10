@@ -12,6 +12,7 @@
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
@@ -40,6 +41,8 @@ $font-medium: 500;
 $font-semibold: 600;
 $font-bold: 700;
 $heading-font: 'Playfair Display', serif;
+$line-heaight: 194%; /* 2.06125rem */
+$body-font-size: clamp(25px, 7vw, 45px);
 
 @mixin card {
 	border-radius: 1.25rem;
