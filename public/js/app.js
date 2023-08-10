@@ -8,6 +8,15 @@ const openNavbar = () => {
 
 		navOpenBtn.style.display = 'none';
 		navCloseBtn.style.display = 'flex';
+
+		const serviceBtn = document.getElementById('services');
+
+		serviceBtn.addEventListener('click', () => {
+			navbar.style.display = 'none';
+
+			navCloseBtn.style.display = 'none';
+			navOpenBtn.style.display = 'flex';
+		});
 	});
 };
 

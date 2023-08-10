@@ -2,7 +2,7 @@
 
 .services-section {
 	background: #000;
-	padding: 6em 0 4em 0;
+	padding: 7em 0 4em 0;
 	.container {
 		.wrap {
 			@include container();
@@ -11,6 +11,7 @@
 				color: $color-light;
 				font-size: clamp(25px, 7vw, 45px);
 				margin-bottom: 0.7em;
+				font-family: $heading-font;
 			}
 
 			.sub-text {
