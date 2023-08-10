@@ -13,6 +13,13 @@
 			@include hero-font();
 			font-family: $heading-font;
 			max-width: 600px;
+			position: relative;
+
+			.splash {
+				position: absolute;
+				margin-left: -15px;
+				margin-top: -10px;
+			}
 		}
 
 		.positioned-text {
@@ -44,6 +51,11 @@
 
 			.heading {
 				height: fit-content;
+			}
+
+			.positioned-text {
+				top: 70%;
+				font-size: 200px;
 			}
 
 			.img-container {

@@ -269,6 +269,10 @@ a {
     padding-bottom: 10em;
     justify-content: space-around;
   }
+  .hero-section .container .masthead {
+    font-size: 50px !important;
+    font-family: "Poppins", sans-serif !important;
+  }
   .hero-section .container .text-wrap {
     max-width: 500px;
   }
@@ -778,6 +782,12 @@ a {
   line-height: 124.5%; /* 4.86081rem */
   font-family: "Playfair Display", serif;
   max-width: 600px;
+  position: relative;
+}
+.about-hero-section .container .heading .splash {
+  position: absolute;
+  margin-left: -15px;
+  margin-top: -10px;
 }
 .about-hero-section .container .positioned-text {
   position: absolute;
@@ -808,6 +818,10 @@ a {
   }
   .about-hero-section .container .heading {
     height: fit-content;
+  }
+  .about-hero-section .container .positioned-text {
+    top: 70%;
+    font-size: 200px;
   }
   .about-hero-section .container .img-container {
     width: 100%;
