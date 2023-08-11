@@ -1,1 +1,38 @@
 @import 'resets';
+
+.contact-hero-section {
+	padding-top: 15vh;
+	margin-bottom: 4em;
+	.container {
+		@include container();
+
+		.text-wrap {
+			text-align: center;
+			padding: 4em 0;
+
+			.text {
+				font-size: 1.1rem;
+				font-weight: $font-semibold;
+				color: $bg-color;
+			}
+
+			.heading {
+				font-size: $body-font-size;
+				// margin-bottom: 0.7em;
+				padding: 0 2em;
+				line-height: 1.3;
+			}
+		}
+
+		.img-wrap {
+			background: url('/assets/map.jpeg') center / cover, no-repeat;
+			// height: 500px;
+			// width: 100%;
+			opacity: 0.4;
+
+			.img {
+				width: 100%;
+			}
+		}
+	}
+}

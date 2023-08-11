@@ -20,6 +20,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
 *,
 *::before,
 *::after {
@@ -1145,6 +1149,167 @@ a {
     gap: 20px;
     margin: 0 auto;
     justify-content: center;
+  }
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 2.06125rem */
+.contact-hero-section {
+  padding-top: 15vh;
+  margin-bottom: 4em;
+}
+.contact-hero-section .container {
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-hero-section .container .text-wrap {
+  text-align: center;
+  padding: 4em 0;
+}
+.contact-hero-section .container .text-wrap .text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #112b36;
+}
+.contact-hero-section .container .text-wrap .heading {
+  font-size: clamp(23px, 7vw, 45px);
+  padding: 0 2em;
+  line-height: 1.3;
+}
+.contact-hero-section .container .img-wrap {
+  background: url("/assets/map.jpeg") center/cover, no-repeat;
+  opacity: 0.4;
+}
+.contact-hero-section .container .img-wrap .img {
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 2.06125rem */
+.office-locations-section {
+  background: #112b36;
+  margin-bottom: 6em;
+}
+.office-locations-section .office-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.office-locations-section .office-container .text-wrap {
+  color: #fff;
+  padding: 5em 0;
+}
+.office-locations-section .office-container .text-wrap .heading-wrap {
+  margin-bottom: 2em;
+}
+.office-locations-section .office-container .text-wrap .heading-wrap .heading {
+  font-size: clamp(23px, 7vw, 45px);
+}
+.office-locations-section .office-container .text-wrap .addresses {
+  display: grid;
+  gap: 2em;
+  max-width: 300px;
+}
+.office-locations-section .office-container .text-wrap .addresses .office {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.office-locations-section .office-container .text-wrap .addresses .office i,
+.office-locations-section .office-container .text-wrap .addresses .office span {
+  display: block;
+}
+.office-locations-section .office-container .text-wrap .addresses .office i {
+  font-size: 1.5em;
+}
+@media screen and (min-width: 43em) {
+  .office-locations-section {
+    height: 500px;
+  }
+  .office-locations-section .office-container {
+    width: 100%;
+    margin: unset;
+    display: flex;
+    gap: 6em;
+    align-items: center;
+  }
+  .office-locations-section .office-container .img-wrap {
+    background: url("/assets/partners.jpg") center/cover, no-repeat;
+    height: 500px;
+    width: 400px;
+    position: relative;
+  }
+  .office-locations-section .office-container .img-wrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #112b36;
+    opacity: 0.6;
+  }
+  .office-locations-section .office-container .text-wrap {
+    padding: unset;
+  }
+}
+@media screen and (min-width: 62em) {
+  .office-locations-section .office-container {
+    gap: 15em;
+  }
+  .office-locations-section .office-container .img-wrap {
+    width: 500px;
+  }
+  .office-locations-section .office-container .text-wrap .addresses {
+    max-width: 400px;
   }
 }
 

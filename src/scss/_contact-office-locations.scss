@@ -1,0 +1,92 @@
+@import 'resets';
+
+.office-locations-section {
+	background: $bg-color;
+	margin-bottom: 6em;
+
+	.office-container {
+		width: 90%;
+		margin: 0 auto;
+
+		.text-wrap {
+			color: $color-light;
+			padding: 5em 0;
+
+			.heading-wrap {
+				margin-bottom: 2em;
+
+				.heading {
+					font-size: $body-font-size;
+				}
+			}
+
+			.addresses {
+				display: grid;
+				gap: 2em;
+				max-width: 300px;
+
+				.office {
+					display: flex;
+					flex-direction: column;
+					gap: 1em;
+
+					i,
+					span {
+						display: block;
+					}
+
+					i {
+						font-size: 1.5em;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 43em) {
+		height: 500px;
+		// height: fit-content;
+		.office-container {
+			width: 100%;
+			margin: unset;
+
+			display: flex;
+			gap: 6em;
+			align-items: center;
+
+			.img-wrap {
+				background: url('/assets/partners.jpg') center/cover, no-repeat;
+				height: 500px;
+				width: 400px;
+				position: relative;
+
+				&::after {
+					content: '';
+					position: absolute;
+					inset: 0;
+					background: $bg-color;
+					opacity: 0.6;
+				}
+			}
+
+			.text-wrap {
+				padding: unset;
+			}
+		}
+	}
+
+	@media screen and (min-width: 62em) {
+		.office-container {
+			gap: 15em;
+			.img-wrap {
+				width: 500px;
+			}
+
+			.text-wrap {
+				.addresses {
+					max-width: 400px;
+				}
+			}
+		}
+	}
+}
