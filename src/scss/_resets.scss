@@ -42,7 +42,7 @@ $font-semibold: 600;
 $font-bold: 700;
 $heading-font: 'Playfair Display', serif;
 $line-heaight: 194%; /* 2.06125rem */
-$body-font-size: clamp(25px, 7vw, 45px);
+$body-font-size: clamp(23px, 7vw, 45px);
 
 @mixin card {
 	border-radius: 1.25rem;
@@ -57,7 +57,7 @@ $body-font-size: clamp(25px, 7vw, 45px);
 @mixin hero-font {
 	color: #000;
 	font-family: Poppins;
-	font-size: clamp(1rem, 10vw, 3.90425rem);
+	font-size: clamp(1rem, 7vw, 3.90425rem);
 	font-style: normal;
 	font-weight: 700;
 	line-height: 124.5%; /* 4.86081rem */

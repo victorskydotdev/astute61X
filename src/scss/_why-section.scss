@@ -15,14 +15,14 @@
 
 			.wrap {
 				.heading {
-					font-size: clamp(25px, 7vw, 45px);
+					font-size: $body-font-size;
 					text-align: center;
 					border: $body-heading-color 2px solid;
 					padding: 1em;
 					color: #000;
 					text-transform: capitalize;
 					border-radius: 20px;
-					font-family: $heading-font;
+					// font-family: $heading-font;
 				}
 
 				.text {

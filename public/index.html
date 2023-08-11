@@ -9,6 +9,9 @@
 
 		<link rel="icon" type="image/x-icon" href="/assets/brand-logo.png" />
 
+		<!-- tailwind cdn -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
 		<!-- fontawesome script -->
 		<script
 			src="https://kit.fontawesome.com/8464da9b67.js"
@@ -38,7 +41,15 @@
 					</li>
 
 					<li class="link">
-						<a href="/about"><i class="fa-solid fa-mountain-sun"></i> About</a>
+						<a href="/partners"
+							><i class="fa-regular fa-handshake"></i> Partners</a
+						>
+					</li>
+
+					<li class="link">
+						<a href="/about"
+							><i class="fa-solid fa-mountain-sun"></i> <span>About</span>
+						</a>
 					</li>
 
 					<li class="link">
@@ -51,11 +62,33 @@
 		</nav>
 
 		<div class="hamburger">
-			<i class="fa-solid fa-bars"></i>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="#000000"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="#000000"
+				class="w-10 h-10">
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M3.75 9h16.5m-16.5 6.75h16.5" />
+			</svg>
 		</div>
 
 		<div class="hamburger-close">
-			<i class="fa-solid fa-xmark"></i>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke-width="1.5"
+				stroke="#af292e"
+				class="w-10 h-10">
+				<path
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					d="M6 18L18 6M6 6l12 12" />
+			</svg>
 		</div>
 	</div>
 </header>

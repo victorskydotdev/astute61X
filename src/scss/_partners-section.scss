@@ -1,5 +1,25 @@
 @import 'resets';
 
+.partner-hero-section {
+	background: teal;
+	height: 550px;
+	padding-top: 15vh;
+	margin-bottom: 6em;
+	.wrap {
+		height: 100%;
+		position: relative;
+		width: 100%;
+
+		&::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: rgba(0, 0, 0, 0.938);
+			width: 100% !important;
+		}
+	}
+}
+
 .team-section {
 	padding-bottom: 10em;
 	.text-container {
@@ -8,7 +28,6 @@
 		.heading {
 			font-size: $body-font-size;
 			margin-bottom: 0.8em;
-			font-family: $heading-font;
 			text-align: center;
 		}
 	}

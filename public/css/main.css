@@ -71,7 +71,7 @@ a {
   top: 100%;
   left: 0;
   width: 100%;
-  background: #af292e;
+  background-image: linear-gradient(to right top, #af292e, #8e245b, #54346a, #1c3558, #112b36);
   height: 85vh;
   display: none;
 }
@@ -84,11 +84,22 @@ a {
 }
 .header .container .navigation .wrap .nav-links {
   display: grid;
-  gap: 4em;
+  gap: 2em;
+  width: 100%;
+  justify-content: center;
+}
+.header .container .navigation .wrap .nav-links .link {
+  background: #fff;
+  color: #7c7c7c;
+  text-align: center;
+  padding: 1em;
+  border-radius: 10px;
 }
 .header .container .navigation .wrap .nav-links .link a {
-  color: #fff;
-  font-size: 1.2rem;
+  align-items: center;
+}
+.header .container .navigation .wrap .nav-links .link a i {
+  display: none;
 }
 .header .container .hamburger,
 .header .container .hamburger-close {
@@ -101,6 +112,12 @@ a {
 }
 .header .container .hamburger i,
 .header .container .hamburger-close i {
+  font-size: 2rem;
+  color: #373737;
+  cursor: pointer;
+}
+.header .container .hamburger svg,
+.header .container .hamburger-close svg {
   font-size: 2rem;
   color: #373737;
   cursor: pointer;
@@ -118,7 +135,7 @@ a {
     justify-content: center;
   }
   .header .container .navigation .wrap .nav-links {
-    gap: 5em;
+    gap: 3em;
   }
 }
 @media screen and (min-width: 62em) {
@@ -141,6 +158,9 @@ a {
     align-items: center;
     gap: 3em;
     height: 100%;
+  }
+  .header .container .navigation .wrap .nav-links .link {
+    padding: unset;
   }
   .header .container .navigation .wrap .nav-links .link a {
     font-size: 1rem;
@@ -215,13 +235,12 @@ a {
 .hero-section .container .text-wrap .masthead {
   color: #000;
   font-family: Poppins;
-  font-size: clamp(1rem, 10vw, 3.90425rem);
+  font-size: clamp(1rem, 7vw, 3.90425rem);
   font-style: normal;
   font-weight: 700;
   line-height: 124.5%; /* 4.86081rem */
   margin-bottom: 0.6em;
   text-transform: capitalize;
-  font-family: "Playfair Display", serif;
 }
 .hero-section .container .text-wrap .text {
   color: #7c7c7c;
@@ -322,9 +341,8 @@ a {
 }
 .services-section .container .wrap .heading {
   color: #fff;
-  font-size: clamp(25px, 7vw, 45px);
+  font-size: clamp(23px, 7vw, 45px);
   margin-bottom: 0.7em;
-  font-family: "Playfair Display", serif;
 }
 .services-section .container .wrap .sub-text {
   color: #7c7c7c;
@@ -451,14 +469,13 @@ a {
   gap: 15px;
 }
 .why-section .container .content-wrap .wrap .heading {
-  font-size: clamp(25px, 7vw, 45px);
+  font-size: clamp(23px, 7vw, 45px);
   text-align: center;
   border: #373737 2px solid;
   padding: 1em;
   color: #000;
   text-transform: capitalize;
   border-radius: 20px;
-  font-family: "Playfair Display", serif;
 }
 .why-section .container .content-wrap .wrap .text {
   display: flex;
@@ -596,7 +613,6 @@ a {
   border: 1px solid #fff;
   padding: 0.7em;
   border-radius: 30px;
-  font-family: "Playfair Display", serif;
 }
 .unlock-section .container .list-wrap {
   display: grid;
@@ -776,18 +792,19 @@ a {
 .about-hero-section .container .heading {
   color: #000;
   font-family: Poppins;
-  font-size: clamp(1rem, 10vw, 3.90425rem);
+  font-size: clamp(1rem, 7vw, 3.90425rem);
   font-style: normal;
   font-weight: 700;
   line-height: 124.5%; /* 4.86081rem */
-  font-family: "Playfair Display", serif;
   max-width: 600px;
   position: relative;
 }
 .about-hero-section .container .heading .splash {
   position: absolute;
   margin-left: -15px;
-  margin-top: -10px;
+  display: none;
+  left: 80%;
+  top: 40px;
 }
 .about-hero-section .container .positioned-text {
   position: absolute;
@@ -820,7 +837,7 @@ a {
     height: fit-content;
   }
   .about-hero-section .container .positioned-text {
-    top: 70%;
+    top: 60%;
     font-size: 200px;
   }
   .about-hero-section .container .img-container {
@@ -910,9 +927,8 @@ a {
   position: relative;
 }
 .vision-section .container .text-area .heading {
-  font-size: clamp(25px, 7vw, 45px);
+  font-size: clamp(23px, 7vw, 45px);
   margin-bottom: 0.8em;
-  font-family: "Playfair Display", serif;
 }
 .vision-section .container .text-area .text {
   max-width: 500px;
@@ -994,9 +1010,8 @@ a {
   position: relative;
 }
 .mission-section .container .text-area .heading {
-  font-size: clamp(25px, 7vw, 45px);
+  font-size: clamp(23px, 7vw, 45px);
   margin-bottom: 0.8em;
-  font-family: "Playfair Display", serif;
 }
 .mission-section .container .text-area .text {
   max-width: 500px;
@@ -1069,6 +1084,25 @@ a {
 }
 
 /* 2.06125rem */
+.partner-hero-section {
+  background: teal;
+  height: 550px;
+  padding-top: 15vh;
+  margin-bottom: 6em;
+}
+.partner-hero-section .wrap {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+.partner-hero-section .wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.938);
+  width: 100% !important;
+}
+
 .team-section {
   padding-bottom: 10em;
 }
@@ -1076,9 +1110,8 @@ a {
   margin-bottom: 4em;
 }
 .team-section .text-container .heading {
-  font-size: clamp(25px, 7vw, 45px);
+  font-size: clamp(23px, 7vw, 45px);
   margin-bottom: 0.8em;
-  font-family: "Playfair Display", serif;
   text-align: center;
 }
 .team-section .container {

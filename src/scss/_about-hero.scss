@@ -11,14 +11,15 @@
 
 		.heading {
 			@include hero-font();
-			font-family: $heading-font;
 			max-width: 600px;
 			position: relative;
 
 			.splash {
 				position: absolute;
 				margin-left: -15px;
-				margin-top: -10px;
+				display: none;
+				left: 80%;
+				top: 40px;
 			}
 		}
 
@@ -54,7 +55,7 @@
 			}
 
 			.positioned-text {
-				top: 70%;
+				top: 60%;
 				font-size: 200px;
 			}
 
