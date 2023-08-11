@@ -47,3 +47,46 @@ layout: 'base.njk'
 </section>
 
 <!-- third section -->
+<section class="form-section">
+	<div class="form-container">
+		<div class="form-area">
+			<div class="form-title-wrap">
+				<h3 class="title">Contact us</h3>
+				<p class="text">
+					You can reach us any time via <span>info@astute6ix.com</span>
+				</p>
+			</div>
+
+			<form class="form" action="" method="post" name="contact-form">
+				<div class="input-wrap">
+					<label for="name">Name</label>
+					<input type="text" id="name" placeholder="Your name" required />
+				</div>
+
+				<div class="input-wrap">
+					<label for="email">Email</label>
+					<input
+						type="email"
+						id="email"
+						placeholder="you@youremail.com"
+						required />
+				</div>
+
+				<div class="input-wrap">
+					<label for="phone">Phone number</label>
+					<input type="tel" id="phone" placeholder="+1(555) 456-670" required />
+				</div>
+
+				<div class="input-wrap">
+					<label for="text-area">How can we help you?</label>
+
+					<textarea name="message" id="text-area">Your message here</textarea>
+				</div>
+
+				<button type="submit">Send</button>
+			</form>
+		</div>
+
+		<div class="img-wrap"></div>
+	</div>
+</section>

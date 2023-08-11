@@ -1,0 +1,83 @@
+@import 'resets';
+
+.form-section {
+	margin-bottom: 6em;
+	.form-container {
+		width: 90%;
+		margin: 0 auto;
+
+		.form-area {
+			max-width: 500px;
+			.form-title-wrap {
+				margin-bottom: 2em;
+				.title {
+					font-size: $body-font-size;
+					color: $bg-color;
+				}
+
+				.text {
+					line-height: $line-heaight;
+					color: $body-text-color;
+
+					span {
+						font-weight: 600;
+					}
+				}
+			}
+
+			.form {
+				display: grid;
+				gap: 2em;
+
+				.input-wrap {
+					display: grid;
+					gap: 0.4em;
+
+					input,
+					textarea {
+						border: 1px solid $body-text-color;
+						padding: 0.5em 0.4em;
+						color: $body-text-color;
+						border-radius: 5px;
+					}
+
+					textarea {
+						height: 190px;
+					}
+				}
+
+				button {
+					background: $accent-color;
+					display: inline-block !important;
+					width: 200px;
+					background: $accent-color;
+					padding: 1.1em 3em;
+					border: none;
+					font-size: 1rem;
+					text-transform: capitalize;
+					border-radius: 40px;
+					color: $color-light;
+				}
+			}
+		}
+
+		@media screen and (min-width: 62em) {
+			display: flex;
+			gap: 5em;
+			width: 100%;
+
+			.form-area {
+				max-width: unset;
+				width: 70%;
+				padding-top: 5em;
+				margin-left: 7em;
+			}
+
+			.img-wrap {
+				background: url('/assets/contact.jpeg') center/cover, no-repeat;
+				height: 800px;
+				width: 80%;
+			}
+		}
+	}
+}
