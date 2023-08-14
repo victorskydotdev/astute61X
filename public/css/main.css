@@ -1311,14 +1311,14 @@ a {
 .office-locations-section .office-container .text-wrap .addresses .office {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.4em;
 }
 .office-locations-section .office-container .text-wrap .addresses .office i,
 .office-locations-section .office-container .text-wrap .addresses .office span {
   display: block;
 }
 .office-locations-section .office-container .text-wrap .addresses .office i {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 @media screen and (min-width: 43em) {
   .office-locations-section {
