@@ -1400,6 +1400,7 @@ a {
 }
 .form-section .form-container .form-area .form-title-wrap {
   margin-bottom: 2em;
+  padding-top: 6em;
 }
 .form-section .form-container .form-area .form-title-wrap .title {
   font-size: clamp(23px, 7vw, 45px);
