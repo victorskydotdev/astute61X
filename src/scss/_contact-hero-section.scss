@@ -29,6 +29,20 @@
 			// height: 500px;
 			// width: 100%;
 			opacity: 0.4;
+			position: relative;
+			z-index: 0;
+
+			.location-dot {
+				position: absolute;
+				height: 15px;
+				width: 15px;
+				border-radius: 100%;
+				background: red;
+				left: 23%;
+				top: 20%;
+				cursor: pointer;
+				z-index: 100;
+			}
 
 			.img {
 				width: 100%;

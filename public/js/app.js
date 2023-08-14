@@ -31,3 +31,14 @@ const closeNavbar = () => {
 
 openNavbar();
 closeNavbar();
+
+// intersection observer for section  animations
+const domElements = document.querySelectorAll('all elements to be observed');
+
+const options = {
+	root: null,
+	threshold: 0.3,
+	rootMargin: '-100px',
+};
+
+const intersectionObserver = new IntersectionObserver(cbFunction, options);

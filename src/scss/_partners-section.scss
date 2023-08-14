@@ -1,7 +1,9 @@
 @import 'resets';
 
 .partner-hero-section {
-	background: teal;
+	// background: teal;
+
+	background: url('/assets/partnership.jpeg') center/cover, no-repeat;
 	height: 550px;
 	padding-top: 15vh;
 	margin-bottom: 6em;
@@ -14,7 +16,7 @@
 			content: '';
 			position: absolute;
 			inset: 0;
-			background: rgba(0, 0, 0, 0.938);
+			background: rgba(0, 0, 0, 0.699);
 			width: 100% !important;
 		}
 	}
@@ -22,6 +24,7 @@
 
 .team-section {
 	padding-bottom: 10em;
+	margin-bottom: 10em;
 	.text-container {
 		margin-bottom: 4em;
 
@@ -38,18 +41,52 @@
 		gap: 3em;
 
 		.tm-wrap {
-			height: 400px;
+			min-height: 400px;
 			width: 100%;
 			border-radius: 20px;
 
-			&:nth-child(1) {
+			.img-wrap1 {
 				background: url('/assets/person-1.png') center/cover, no-repeat;
+				height: 400px;
+				width: 100%;
+				border-radius: 20px;
 			}
-			&:nth-child(2) {
+
+			.img-wrap2 {
 				background: url('/assets/person-2.png') center/cover, no-repeat;
+				height: 400px;
+				width: 100%;
+				border-radius: 20px;
 			}
-			&:nth-child(3) {
+
+			.img-wrap3 {
 				background: url('/assets/person-3.png') center/cover, no-repeat;
+				height: 400px;
+				width: 100%;
+				border-radius: 20px;
+			}
+
+			.wrap {
+				margin-bottom: 1em;
+			}
+
+			.text-wrap {
+				.heading {
+					font-weight: $font-semibold;
+					margin-bottom: 0.5em;
+				}
+
+				.about-snippet {
+					margin-bottom: 1em;
+				}
+
+				.link {
+					background: $accent-color;
+					color: $color-light;
+					padding: 1em 2em;
+					display: inline-block;
+					border-radius: 30px;
+				}
 			}
 		}
 

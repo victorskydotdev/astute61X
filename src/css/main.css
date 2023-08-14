@@ -26,6 +26,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
 *,
 *::before,
 *::after {
@@ -1091,7 +1097,7 @@ a {
 
 /* 2.06125rem */
 .partner-hero-section {
-  background: teal;
+  background: url("/assets/partnership.jpeg") center/cover, no-repeat;
   height: 550px;
   padding-top: 15vh;
   margin-bottom: 6em;
@@ -1105,12 +1111,13 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.938);
+  background: rgba(0, 0, 0, 0.699);
   width: 100% !important;
 }
 
 .team-section {
   padding-bottom: 10em;
+  margin-bottom: 10em;
 }
 .team-section .text-container {
   margin-bottom: 4em;
@@ -1127,18 +1134,44 @@ a {
   gap: 3em;
 }
 .team-section .container .tm-wrap {
+  min-height: 400px;
+  width: 100%;
+  border-radius: 20px;
+}
+.team-section .container .tm-wrap .img-wrap1 {
+  background: url("/assets/person-1.png") center/cover, no-repeat;
   height: 400px;
   width: 100%;
   border-radius: 20px;
 }
-.team-section .container .tm-wrap:nth-child(1) {
-  background: url("/assets/person-1.png") center/cover, no-repeat;
-}
-.team-section .container .tm-wrap:nth-child(2) {
+.team-section .container .tm-wrap .img-wrap2 {
   background: url("/assets/person-2.png") center/cover, no-repeat;
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
 }
-.team-section .container .tm-wrap:nth-child(3) {
+.team-section .container .tm-wrap .img-wrap3 {
   background: url("/assets/person-3.png") center/cover, no-repeat;
+  height: 400px;
+  width: 100%;
+  border-radius: 20px;
+}
+.team-section .container .tm-wrap .wrap {
+  margin-bottom: 1em;
+}
+.team-section .container .tm-wrap .text-wrap .heading {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.team-section .container .tm-wrap .text-wrap .about-snippet {
+  margin-bottom: 1em;
+}
+.team-section .container .tm-wrap .text-wrap .link {
+  background: #af292e;
+  color: #fff;
+  padding: 1em 2em;
+  display: inline-block;
+  border-radius: 30px;
 }
 @media screen and (min-width: 43em) {
   .team-section .container {
@@ -1207,6 +1240,19 @@ a {
 .contact-hero-section .container .img-wrap {
   background: url("/assets/map.jpeg") center/cover, no-repeat;
   opacity: 0.4;
+  position: relative;
+  z-index: 0;
+}
+.contact-hero-section .container .img-wrap .location-dot {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background: red;
+  left: 23%;
+  top: 20%;
+  cursor: pointer;
+  z-index: 100;
 }
 .contact-hero-section .container .img-wrap .img {
   width: 100%;
@@ -1412,6 +1458,195 @@ a {
     background: url("/assets/contact.jpeg") center/cover, no-repeat;
     height: 800px;
     width: 80%;
+  }
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 2.06125rem */
+.director-profile {
+  padding-top: 18vh;
+  margin-bottom: 8em;
+}
+.director-profile .johnson-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.director-profile .johnson-container .img-container {
+  background: url("/assets/person-1.png") center/cover, no-repeat;
+  height: 450px;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 1em;
+}
+.director-profile .johnson-container .text-wrap .heading {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #af292e;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 43em) {
+  .director-profile .johnson-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
+  }
+}
+@media screen and (min-width: 62em) {
+  .director-profile .johnson-container {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 4em;
+  }
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 2.06125rem */
+.director-profile {
+  padding-top: 18vh;
+}
+.director-profile .kemi-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.director-profile .kemi-container .img-container {
+  background: url("/assets/person-2.png") center/cover, no-repeat;
+  height: 450px;
+  border-radius: 20px;
+  margin-bottom: 1em;
+}
+.director-profile .kemi-container .text-wrap .heading {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #af292e;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 43em) {
+  .director-profile .kemi-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
+  }
+}
+@media screen and (min-width: 62em) {
+  .director-profile .kemi-container {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 4em;
+  }
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 2.06125rem */
+.director-profile {
+  padding-top: 18vh;
+  margin-bottom: 8em;
+}
+.director-profile .akin-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.director-profile .akin-container .img-container {
+  background: url("/assets/person-3.png") center/cover, no-repeat;
+  height: 450px;
+  border-radius: 20px;
+  margin-bottom: 1em;
+}
+.director-profile .akin-container .text-wrap .heading {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #af292e;
+  margin-bottom: 1em;
+}
+@media screen and (min-width: 43em) {
+  .director-profile .akin-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
+  }
+}
+@media screen and (min-width: 62em) {
+  .director-profile .akin-container {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 4em;
   }
 }
 
