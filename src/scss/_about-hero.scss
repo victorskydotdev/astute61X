@@ -23,6 +23,12 @@
 			}
 		}
 
+		.animation-1 {
+			transform: translateY(-100px);
+			transition: all 1000ms ease;
+			opacity: 0;
+		}
+
 		.positioned-text {
 			position: absolute;
 			top: 20%;
@@ -36,6 +42,12 @@
 			background: url('/assets/about-hero-img.png') center/cover, no-repeat;
 			height: 400px;
 			border-radius: 20px;
+		}
+
+		.animation-3 {
+			transform: translateY(100%);
+			transition: all 1s ease;
+			opacity: 0;
 		}
 
 		@media screen and (min-width: 43em) {

@@ -32,6 +32,31 @@ const closeNavbar = () => {
 openNavbar();
 closeNavbar();
 
+// onPageLoad hero animation
+document.addEventListener('DOMContentLoaded', () => {
+	// animating the hero elements on page load
+	const animationOne = document.querySelectorAll('.animation-1');
+	const animationTwo = document.querySelectorAll('.animation-2');
+	const animationThree = document.querySelectorAll('.animation-3');
+
+	setTimeout(() => {
+		animationOne.forEach((animatedElement) => {
+			animatedElement.style.transform = 'translateY(0)';
+			animatedElement.style.opacity = 1;
+		});
+
+		animationTwo.forEach((animatedElement) => {
+			animatedElement.style.transform = 'translate(0)';
+			animatedElement.style.opacity = 1;
+		});
+
+		animationThree.forEach((animatedElement) => {
+			animatedElement.style.transform = 'translate(0)';
+			animatedElement.style.opacity = 1;
+		});
+	}, 100);
+});
+
 // intersection observer for section  animations
 const domElements = document.querySelectorAll('all elements to be observed');
 
@@ -41,4 +66,4 @@ const options = {
 	rootMargin: '-100px',
 };
 
-const intersectionObserver = new IntersectionObserver(cbFunction, options);
+// const intersectionObserver = new IntersectionObserver(cbFunction, options);
